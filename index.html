@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Spot Discovery</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <header>
+    <a href=""><h1>Spot Discovery</h1></a>
+  </header>
+
+  <button href="#post" class="post_button" id= "move">投稿する</button>
+
+  <section class="map">
+    <div class="container" id="maps">
+      <div class="dipslay-map" id="div_map" style="height: 350px"></div>
+    </div>
+    <h2>あなたの近くのSpot</h2>
+  </section>
+
+  <section class="posts">
+    <div class="container">
+      <h2>人気の投稿</h2>
+
+      <div class="pictures">
+        <a class="picture" href="./spots/spot1.html">
+          <div class="img img1"></div>
+          <h3>カラフルな住宅</h3>
+        </a>
+        <a class="picture" href="./spots/spot2.html">
+          <div class="img img2"></div>
+          <h3>変わった交差点</h3>
+        </a>
+        <a class="picture" href="./spots/spot3.html">
+          <div class="img img3"></div>
+          <h3>頭上に鳥居</h3>
+        </a>
+        <a class="picture" href="./spots/spot4.html">
+          <div class="img img4"></div>
+          <h3>怪しくない</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="users">
+    <div class="container">
+      <h2>人気のユーザー</h2>
+
+      <a class="user" href="./users/user1.html">
+        <div class="img img1"></div>
+        <div class="name">satoon</div>
+      </a>
+      <a class="user" href="./users/user2.html">
+        <div class="img img2"></div>
+        <div class="name">sabe</div>
+      </a>
+      <a class="user" href="./users/user3.html">
+        <div class="img img3"></div>
+        <div class="name">kame</div>
+      </a>
+      <a class="user" href="./users/user4.html">
+        <div class="img img4"></div>
+        <div class="name">ebi</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="post" id="post">
+    <div class="container">
+      <h2>投稿する</h2>
+
+      <form>
+        <div class="form-data">
+          <h4>ユーザーネーム</h4>
+          <input type="text" name="name" placeholder="ユーザーネームを入力してください" value="sato">
+        </div>
+        <div class="form-data">
+          <h4>タイトル</h4>
+          <input type="text" name="title" placeholder="タイトルを入力してください">
+        </div>
+        <div class="form-data">
+          <h4>画像</h4>
+          <label for="file_photo" class="file_input">
+            ＋写真を選択する
+            <input type="file" name="image" id="file_photo" style="display:none;">
+          </label>
+        </div>
+
+        <input type="submit" value="投稿する">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; nkmr.lab</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="http://js.api.olp.yahooapis.jp/OpenLocalPlatform/V1/jsapi?appid=dj00aiZpPXB1SVR4bFZVRVlLeCZzPWNvbnN1bWVyc2VjcmV0Jng9YzY-"></script>
+  <script type="text/javascript" src="./map.js"></script>
+  <script type="text/javascript" src="./move.js"></script>
+</body>
+</html>

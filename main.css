@@ -1,0 +1,316 @@
+html, body, h1, h2, h3, h4, div, p, span {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  /* font-family:"Comic Sans MS","fantasy"; */
+  background-color: rgba(250, 178, 69, 0.8);
+}
+
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+
+/* header */
+
+header {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header h1 {
+  font-size:3em;
+  /* font-family:"Comic Sans MS"; */
+  font-family: 'Chalkboard SE','Chalkboard','Comic Sans MS',sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* post button */
+
+button.post_button {
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid gray;
+  border-radius: 15px;
+  position: fixed;
+  left: 10%;
+  bottom: 20px;
+  background-color: rgba(238, 125, 154, 0.8);
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* main */
+
+section {
+  width: 100%;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+section h2 {
+  height: 50px;
+  line-height: 50px;
+}
+
+/* main - map */
+.display-map {
+  width: 100%;
+}
+
+/* main - posts */
+.pictures {
+  width: 100%;
+}
+
+.picture {
+  width: 100%;
+  margin-bottom: 20px;
+  display:inline-block;
+  border: 1px solid rgba(253, 169, 42, 0.8);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  text-decoration: none;
+  background-color: rgb(243, 233, 220);
+}
+
+.picture .img {
+  width: 95%;
+  margin: 5px auto 0;
+  height: 300px;
+  border-bottom: 3px solid gray;
+  border-radius: 5px;
+  background-size: cover;
+  display: block;
+}
+
+.picture .img1 {
+  background-image: url("./images/spot1.jpg");
+}
+
+.picture .img2 {
+  background-image: url("./images/spot2.png");
+}
+
+.picture .img3 {
+  background-image: url("./images/spot3.jpg");
+}
+
+.picture .img4 {
+  background-image: url("./images/spot4.jpg");
+}
+
+.picture h3 {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+/* main - users */
+.users {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.users a {
+  display: block;
+  text-decoration: none;
+}
+
+.user {
+  height: 90px;
+  margin: 20px 0;
+}
+
+.user:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.user .img {
+  width: 90px;
+  height: 90px;
+  margin: 0 10px;
+  border-radius: 45px;
+  border: 1px solid white;
+  float: left;
+  background-size: cover;
+}
+
+.user .img1 {
+  background-image: url("./images/sato.jpg");
+}
+
+.user .img2 {
+  background-image: url("./images/sabe.jpg");
+}
+
+.user .img3 {
+  background-image: url("./images/kame.jpg");
+}
+
+.user .img4 {
+  background-image: url("./images/ebi.jpg");
+}
+
+.user .name {
+  width: 60%;
+  line-height: 90px;
+  color: rgba(0, 0, 0, 0.8);
+  float: left;
+  font-size: 24px;
+}
+
+/* main - post */
+
+.post form {
+  width: 90%;
+  padding: 20px 0;
+  margin: 0 auto;
+  border: 1px solid gray;
+  border-radius: 15px;
+  text-align: center;
+  background-color: rgb(243, 233, 220);
+}
+
+.form-data {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.post h3 {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.post input {
+  width: 60%;
+  padding: 5px 15px;
+  margin: 5px auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.file_input {
+  width: 60%;
+  margin: 0 auto;
+  color: gray;
+  background-color: white;
+  padding: 5px 10px;
+  margin-top: 5px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  display: block;
+}
+
+.post input[type="submit"] {
+  width: 60%;
+  padding: 5px 15px;
+  margin: 40px 0 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(238, 125, 154, 0.8);
+  color: white;
+  font-size: 15px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  border-top: 1px solid gray;
+  text-align: center;
+}
+
+footer p {
+  height: 100px;
+  line-height: 100px;
+  color: gray;
+}
+
+
+/* spot detail */
+.spot-detail-user {
+  width: 100%;
+  height: 40px;
+  padding: 5px 0;
+}
+
+.spot-detail-user .img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-size: cover;
+  float: left;
+}
+
+.spot-detail-user .name {
+  text-align: left;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  font-size: 16px;
+}
+
+.spot-detail-info {
+  height: 25px;
+  padding: 5px 10px;
+}
+
+.spot-detail-info:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.spot-detail-info .likes {
+  float: left;
+  line-height: 25px;
+}
+
+.spot-detail-info .likes .fa {
+  font-size: 24px;
+  padding: 0 3px;
+}
+
+.spot-detail-info .likes p {
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.spot-detail-info .date {
+  padding-top: 26px;
+  float: right;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+/* user show */
+.user-show {
+  padding: 20px 0;
+}
